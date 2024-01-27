@@ -1,0 +1,27 @@
+<!-- chromium.runsettings -->
+<RunSettings>
+    <!-- NUnit adapter -->
+    <NUnit>
+        <NumberOfTestWorkers>2</NumberOfTestWorkers>
+    </NUnit>
+    <!-- General run configuration -->
+    <RunConfiguration>
+        <EnvironmentVariables>
+            <!-- For debugging selectors, it's recommend to set the following environment variable -->
+            <!-- <DEBUG>pw:api</DEBUG> -->
+        </EnvironmentVariables>
+    </RunConfiguration>
+    <TestRunParameters>
+    <Parameter name="baseUrl" value="https://playwright.dev" />
+  </TestRunParameters>
+    <!-- Playwright -->
+    <Playwright>
+        <BrowserName>chromium</BrowserName>
+        <ExpectTimeout>5000</ExpectTimeout>
+        <LaunchOptions>
+            <Headless>true</Headless>
+            <SlowMo>1000</SlowMo>
+            <Channel>chrome</Channel>
+        </LaunchOptions>
+    </Playwright>
+</RunSettings>
